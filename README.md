@@ -1,4 +1,4 @@
-<h1>HTML Etiketleri kullanımı</h1>
+<h1>HTML ETİKETLEME KULLANIMI</h1>
 
 <h2>Başlık ve Biçimlendirme</h2>
 <p> Bu bölümde Başlık Ve Biçimlendirme Etiketleri Kullanılmıştır</p>
