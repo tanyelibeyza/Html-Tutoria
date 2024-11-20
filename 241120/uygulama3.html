@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form örnek</title>
+</head>
+<body>
+    <h1>Form Uygulama Örnegi</h1>
+
+    <form action="https:/yazilimbilisim.net/ogrenciler/kontrol.php"method="post">
+        <label for="ad">adi:</label>
+         <input type="text"placeholder="Adinizi girin" id="ad" name="ad" required maxlength="20"  autocomplete="off"><br><br>
+
+         <label> soyadi:<input type="text" placeholder="soyadiniz Girin" id="soyad" name="soyad"></label>
+        <br><br>
+          
+         <label for="dogum tarihi">dogum tarihi:</label>
+         <input type="datetime-local" id="dogum tarihi" name="dogum tarihi" value="2015-06-20" min="2000-01-01" max="2024-01-01" required><br><br>
+        
+         <label for="sifreniz">sifreniz:</label>
+         <input type="password" placeholder="sifreniz" name="sifreniz"minlength="8" maxlength="16" required><br><br>
+
+         <label for="maasiniz">maasiniz:</label>
+         <input type="number" id="maasiniz" name="maasiniz"  min="5000" max="100000" step="500"><br><br>
+
+         <label for="Epostaniz">Epostaniz:</label>
+         <input type="email" id="Epostaniz" name="Epostaniz"placeholder="beyzanur@eposta.com" autocomplete="on" required><br><br>
+
+         <label for="Hobiniz">Hobiniz:</label>
+         <input type="text" id="Hobiniz" name="Hobiniz"><br><br>
+        
+         <label for="Kullanici Adiniz">Kullanici Adiniz:</label>
+         <input type="text" id="Kullanici Adiniz" name="Kullanici Adiniz" value="balikdori" readonly><br><br>
+
+         <label for="Kredi Notu">Kredi Notu:</label>
+         <input type="text" id="Kredi Notu" name="Kredi Notu" value="70" disabled><br><br>
+
+         <label for="özgeçmiş">ozgecmis:</label>
+         <input type="text" id="özgeçmiş" name="özgeçmiş"><br><br>
+
+         <label for="dosya">dosya:</label>
+         <input type="file" id="dosya" name="dosya" name="files[]" multiple><br><br>
+
+         <button type="submit">Kaydet</button>
+
+
+    </form>
+</body>
+</html>
