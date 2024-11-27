@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Uygulama Örneği </title>
+</head>
+<body>
+    <h1>fieldset ve select kullanımı</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="isim"></label><br>
+        <input type="text" id="isim" name="isim" placeholder="Ad"><br><br>
+
+        <label for="soyad"></label>
+        <input type="text" id="soyad" name="soyad" placeholder="soyad"><br><br>
+
+        <input type="radio" name="cinsiyet" id="kiz">
+        <label for="kiz">Kız</label>
+        <input type="radio" name="cinsiyet" id="erkek">
+        <label for="erkek">Erkek</label><br><br>
+
+        <label for="tarih">Doğum Tarihi</label><br><br>
+        <input type="date" name="tarih" id="tarih" value="2020-01-01">
+
+
+      </fieldset>
+
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+
+            <label for="okul">okul</label><br><br>
+            <input type="text" id="okul" name="okul"><br><br>
+
+            <label for="sinif">Sınıf</label><br>
+            <input type="text" name="sinif" id="sinif"><br><br>
+
+            <label for="bölüm">Bölümünüz</label><br><br>
+            <select name="bolum" id="bolum">
+            <option value="1">Bilişim Teknolojileri</option>
+            <option value="2">Çocuk Gelişimi</option>
+            <option value="3">Moda Tasarımı</option>
+            <option value="4">Grafik Tasarım</option>
+
+           </select><br><br>
+
+           <fieldset>
+                <legend>Ek Bilgiler</legend>
+                <textarea name="not" id="not" cols="50" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque obcaecati recusandae repellat consequuntur deserunt voluptates necessitatibus, deleniti omnis numquam, fugit sint, perspiciatis vero et molestiae eius laudantium praesentium. Aliquid, at? </textarea>
+                <br>
+
+                <input type="checkbox" name="bilgi" id="bilgi">
+                <label for="bilgi">Bilgileri Kabul Et</label><br><br>
+
+                <input type="checkbox" name="cerez" id="cerez">
+                <label for="cerez">Çerezleri Kabul Et</label><br><br>
+
+
+
+
+
+
+
+                <button type="reset">Kaydet</button>
+           
+           </fieldset>
+           
+           
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
