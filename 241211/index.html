@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Uygulama Örnegi</title>
+    <style>
+    /*resetleme kodları*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #galeri{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       gap: 15px;/*nesneler arasında boşluk verir*/
+        background-color: #333;
+        width: 900px;
+        margin: 0 auto;/*Yukarıdan Aşagıdaki 0 sagdan sola auto*/
+    }
+
+    #galeri img{
+        width: calc(860px/3);/*Genişlik verir*/
+        opacity: 0.5;/*0-1 arasında verilir*/
+        transition: 300ms all;/*300 milisaniye animasyon yapsın*/
+    }
+
+    /*hover üzerinde geldiginde calışır*/
+    #galeri img.hover{
+      opacity: 1;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Flex Uygulamasi</h1>
+   <div id="galeri">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+    <img src="https://picsum.photos/id/237/300/200" alt="...">
+
+   </div>
+</body>
+</html>
